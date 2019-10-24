@@ -126,3 +126,6 @@ button {
           width: 80%;
       }
   }
+  input[type=radio]:focus {
+    color: red;
+  }
