@@ -50,6 +50,14 @@ section{
     min-height: 350px;
 }
 
+.final{
+    height: 350px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.final::-webkit-scrollbar { width: 0 !important }
+
 .tracked {
     list-style: none;
     display: inline;
@@ -82,7 +90,7 @@ button {
   }
 
   p {
-      font-size: 21px;
+    font-size: 19px;
   } 
 
   form { 
@@ -110,8 +118,27 @@ button {
   }
   
   .question{
-      font-size: 25px;
+    font-size: 25px;
   }
+
+  .answer-key{
+    list-style: none;
+    padding: 0;
+    margin: 30px 10% 30px;
+    text-align: left;
+  }
+
+.final p{
+      margin-top: 6px;
+  }
+  .answer-key li{
+      margin: 18px 0;
+  }
+
+  .key-message{
+      margin-top: 50px;
+  }
+
  
   @media only screen and (max-width: 1000px){
       section{

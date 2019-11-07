@@ -84,6 +84,7 @@ function showFinalResults(){
         <h2>You have completed the quiz!</h2>
         <p>Your final score is Score: ${STORE.score}/${STORE.questions.length}</p>
     `)
+
     if(STORE.score <= STORE.questions.length / 2 ){
         $(".final").append(`
         <p>Better luck next time!</p>
@@ -93,6 +94,26 @@ function showFinalResults(){
         <p>Great Job!</p>
         `)      
     }
+
+    $(".final").append(`
+        <h2 class="key-message">Answer Key!</h2>
+        <ul class="answer-key"></ul>
+    `)
+
+    for (let i = 0; i < STORE.questions.length; i++){
+        $('.answer-key').append(`
+        <li>
+            <h3>Question ${i+1}:${STORE.questions[i].question}</h3>
+            <p>Correct Answer: ${STORE.questions[i].answer}</p>
+        </li>
+        `)
+    }
+
+    $(".final").append(`
+        <p class="key-message">Interested in this amazing show? <br> Watch it here:<a href="https://www.amazon.com/Rising-Part-1/dp/B07HLKWDZF/ref=sr_1_3?crid=3BQUXZFE3HMIJ&keywords=stargate+atlantis&qid=1573166580&sprefix=stargate%2Caps%2C208&sr=8-3" target="_blank">Amazon Prime</a></p>
+        
+    `)
+
     STORE.score = 0;
     STORE.currentQuestion = 0;
     $(".final").append(`
