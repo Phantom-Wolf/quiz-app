@@ -103,7 +103,7 @@ function showFinalResults(){
     for (let i = 0; i < STORE.questions.length; i++){
         $('.answer-key').append(`
         <li>
-            <h3>Question ${i+1}:${STORE.questions[i].question}</h3>
+            <h3>Question ${i+1}: ${STORE.questions[i].question}</h3>
             <p>Correct Answer: ${STORE.questions[i].answer}</p>
         </li>
         `)

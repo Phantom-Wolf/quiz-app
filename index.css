@@ -1,158 +1,172 @@
+/* ***** global ***** */
+
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
 
 body{
-    display: flex;
-    flex-direction: column;
-
-    
+  display: flex;
+  flex-direction: column;
 }
 
- main{
-    border-top: 3px solid darkgray;
-    text-align: center;
-    background-image: url("https://external-preview.redd.it/AoRPNdkev04qaOpCo3bd7l2o2aX-4i2-eJqsGRfiuK8.jpg?auto=webp&s=99fb17d9243f3e26e3c0ca330a57f855a25ae3bf");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 800px;
-    
-  }
+p {
+  font-size: 19px;
+}
+
+/* ***** header ***** */
 
 header{
-    display: block;
-    margin: auto;
-    padding: 60px 0;
-    
+  display: block;
+  margin: auto;
+  padding: 60px 0;
 }
 
 .logo{ 
-    color: white;
-    width: 100%;
-    height: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    
+  color: white;
+  width: 100%;
+  height: auto;
+  padding-left: 40px;
+  padding-right: 40px; 
 }
+
+/* ***** main body ***** */
+
+main{
+  border-top: 3px solid darkgray;
+  text-align: center;
+  background-image: url("https://external-preview.redd.it/AoRPNdkev04qaOpCo3bd7l2o2aX-4i2-eJqsGRfiuK8.jpg?auto=webp&s=99fb17d9243f3e26e3c0ca330a57f855a25ae3bf");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+/* ***** section global ***** */
 
 section{
-    width: 60%;
-    margin: 20px auto;
-    border: 2px solid gray;
-    background-color: rgba(33, 114, 160, 0.753);
-    border-radius: 5px;
-    padding: 15px;
-    font-weight: 300;
-    min-height: 350px;
+  width: 60%;
+  margin: 20px auto;
+  border: 2px solid gray;
+  background-color: rgba(33, 114, 160, 0.753);
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: 300;
+  min-height: 350px;
 }
 
+button {
+  margin: 10px auto 30px;
+  height: auto;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color:White;
+  background: gray;
+  border: 2px solid rgb(100, 100, 100);
+  cursor: pointer;
+  border-radius:3px;
+  padding: 10px 20px;
+  display: block;
+}
+
+.tracked {
+  list-style: none;
+  display: inline;
+  margin: 0 80px;
+  font-size: 21px;
+}
+
+/* ***** begin quiz section ***** */
+
+.quiz-title{
+  font-size: 28px;
+}
+
+.quiz {
+  text-align: center;  
+  margin: 30px 0;
+}
+
+/* ***** questions section ***** */
+
+form { 
+  margin: 0 auto;
+}
+
+.right-answer{
+  border: 2px solid green;
+  background-color: rgba(37, 185, 37, 0.712);
+  border-radius: 3px;
+  width: 50%;
+  margin: 10px auto;
+} 
+
+.wrong-answer{
+  border: 1px solid rgb(161, 3, 3);
+  background-color: rgba(248, 32, 32, 0.705);
+  border-radius: 3px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.question{
+  font-size: 25px;
+}
+
+label {
+  font-size: 21px;
+}
+
+/* ***** final section ***** */
+
 .final{
-    height: 350px;
-    overflow: auto;
-    scroll-behavior: smooth;
+  height: 350px;
+  overflow: auto;
+  scroll-behavior: smooth;
 }
 
 .final::-webkit-scrollbar { width: 0 !important }
 
-.tracked {
-    list-style: none;
-    display: inline;
-    margin: 0 80px;
-    font-size: 21px;
-}
-
-.quiz {
-    text-align: center;  
-    margin: 30px 0;
-}
-
-.quiz-title{
-    font-size: 28px;
-}
-
-button {
-    margin: 10px auto 30px;
-    height: auto;
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-    color:White;
-    background: gray;
-    border: 2px solid rgb(100, 100, 100);
-    cursor: pointer;
-    border-radius:3px;
-    padding: 10px 20px;
-    display: block;
-  }
-
-  p {
-    font-size: 19px;
-  } 
-
-  form { 
-    margin: 0 auto;
-  }
-
-  .right-answer{
-    border: 2px solid green;
-    background-color: rgba(37, 185, 37, 0.712);
-    border-radius: 3px;
-    width: 50%;
-    margin: 10px auto;
-  }
-
-  .wrong-answer{
-    border: 1px solid rgb(161, 3, 3);
-    background-color: rgba(248, 32, 32, 0.705);
-    border-radius: 3px;
-    width: 50%;
-    margin: 10px auto;
-  }
-
-  label {
-    font-size: 21px;
-  }
-  
-  .question{
-    font-size: 25px;
-  }
-
-  .answer-key{
-    list-style: none;
-    padding: 0;
-    margin: 30px 10% 30px;
-    text-align: left;
-  }
-
 .final p{
-      margin-top: 6px;
-  }
-  .answer-key li{
-      margin: 18px 0;
-  }
+  margin-top: 6px;
+}
 
-  .key-message{
-      margin-top: 50px;
-  }
+.answer-key{
+  list-style: none;
+  padding: 0;
+  margin: 30px 10% 30px;
+  text-align: left;
+}
+
+.answer-key li{
+  margin: 18px 0;
+}
+
+.key-message{
+  margin-top: 50px;
+}
 
  
-  @media only screen and (max-width: 1000px){
-      section{
-          width:90%;
-      }
-      .tracked{
-          display:block;
-      }
+@media only screen and (max-width: 1000px){
 
-      .right-answer,
-      .wrong-answer{
-          width: 80%;
-      }
+  section{
+    width:90%;
   }
+      
+  .tracked{
+    display:block;
+  }
+
+  .right-answer,
+  .wrong-answer{
+    width: 80%;
+  }
+
   input[type=radio]:focus {
     color: red;
   }
+
+}
